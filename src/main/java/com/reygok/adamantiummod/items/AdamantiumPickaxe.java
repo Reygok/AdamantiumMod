@@ -1,6 +1,7 @@
 package com.reygok.adamantiummod.items;
 
 import com.reygok.adamantiummod.AdamantiumMod;
+import com.reygok.adamantiummod.CommonProxy;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemPickaxe;
@@ -26,6 +27,6 @@ public class AdamantiumPickaxe extends ItemPickaxe
 
 	@Override
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) {
-        return repair.getItem() == AdamantiumMod.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);
+        return repair.getItem() == CommonProxy.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);
 	}
 }

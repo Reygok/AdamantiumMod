@@ -9,119 +9,119 @@ public class AdamantiumRecipes {
 	public AdamantiumRecipes()
 	{
     	// Adamantium Tools ----------------------------------------------------------------------------------------------------------------
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumPickaxe),
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumPickaxe),
     			"xxx",
     			" y ",
     			" y ",
-    			'x', AdamantiumMod.adamantiumIngot, 'y', Items.stick);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumShovel), 
+    			'x', CommonProxy.adamantiumIngot, 'y', Items.stick);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumShovel), 
     			" x ",
     			" y ",
     			" y ",
-    			'x', AdamantiumMod.adamantiumIngot, 'y', Items.stick);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumAxe), 
+    			'x', CommonProxy.adamantiumIngot, 'y', Items.stick);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumAxe), 
     			"xx ", 
     			"xy ", 
     			" y ",
-    			'x', AdamantiumMod.adamantiumIngot, 'y', Items.stick);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumAxe), 
+    			'x', CommonProxy.adamantiumIngot, 'y', Items.stick);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumAxe), 
     			" xx", 
     			" yx", 
     			" y ",
-    			'x', AdamantiumMod.adamantiumIngot, 'y', Items.stick);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumHoe), 
+    			'x', CommonProxy.adamantiumIngot, 'y', Items.stick);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumHoe), 
     			"xx ", 
     			" y ", 
     			" y ",
-    			'x', AdamantiumMod.adamantiumIngot, 'y', Items.stick);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumHoe), 
+    			'x', CommonProxy.adamantiumIngot, 'y', Items.stick);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumHoe), 
     			" xx", 
     			" y ", 
     			" y ",
-    			'x', AdamantiumMod.adamantiumIngot, 'y', Items.stick);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumSword), 
+    			'x', CommonProxy.adamantiumIngot, 'y', Items.stick);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumSword), 
     			"  x", 
     			"  x", 
     			"  y",
-    			'x', AdamantiumMod.adamantiumIngot, 'y', Items.stick);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumSword), 
+    			'x', CommonProxy.adamantiumIngot, 'y', Items.stick);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumSword), 
     			" x ", 
     			" x ", 
     			" y ",
-    			'x', AdamantiumMod.adamantiumIngot, 'y', Items.stick);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumSword), 
+    			'x', CommonProxy.adamantiumIngot, 'y', Items.stick);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumSword), 
     			"x  ", 
     			"x  ", 
     			"y  ",
-    			'x', AdamantiumMod.adamantiumIngot, 'y', Items.stick);
+    			'x', CommonProxy.adamantiumIngot, 'y', Items.stick);
     	
     	// Adamantium Armor ----------------------------------------------------------------------------------------------------------------
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumChestplate), 
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumChestplate), 
     			"x x", 
     			"xxx", 
     			"xxx",
-    			'x', AdamantiumMod.adamantiumIngot);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumHelmet), 
+    			'x', CommonProxy.adamantiumIngot);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumHelmet), 
     			"xxx", 
     			"x x", 
     			"   ",
-    			'x', AdamantiumMod.adamantiumIngot);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumHelmet), 
+    			'x', CommonProxy.adamantiumIngot);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumHelmet), 
     			"   ", 
     			"xxx", 
     			"x x",
-    			'x', AdamantiumMod.adamantiumIngot);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumBoots), 
+    			'x', CommonProxy.adamantiumIngot);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumBoots), 
     			"   ", 
     			"x x", 
     			"x x",
-    			'x', AdamantiumMod.adamantiumIngot);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumBoots), 
+    			'x', CommonProxy.adamantiumIngot);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumBoots), 
     			"x x", 
     			"x x", 
     			"   ",
-    			'x', AdamantiumMod.adamantiumIngot);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumLeggings), 
+    			'x', CommonProxy.adamantiumIngot);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumLeggings), 
     			"xxx", 
     			"x x", 
     			"x x",
-    			'x', AdamantiumMod.adamantiumIngot);
+    			'x', CommonProxy.adamantiumIngot);
     	
     	// Vibranium Lumps ----------------------------------------------------------------------------------------------------------------
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.vibraniumLump), 
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.vibraniumLump), 
     			"xx ", 
     			"xx ", 
     			"   ",
-    			'x', AdamantiumMod.tinyVibraniumLump);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.vibraniumLump), 
+    			'x', CommonProxy.tinyVibraniumLump);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.vibraniumLump), 
     			" xx", 
     			" xx", 
     			"   ",
-    			'x', AdamantiumMod.tinyVibraniumLump);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.vibraniumLump), 
+    			'x', CommonProxy.tinyVibraniumLump);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.vibraniumLump), 
     			"   ", 
     			"xx ", 
     			"xx ",
-    			'x', AdamantiumMod.tinyVibraniumLump);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.vibraniumLump), 
+    			'x', CommonProxy.tinyVibraniumLump);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.vibraniumLump), 
     			"   ", 
     			" xx", 
     			" xx",
-    			'x', AdamantiumMod.tinyVibraniumLump);
+    			'x', CommonProxy.tinyVibraniumLump);
     	
     	// Adamantium Ingot & Block----------------------------------------------------------------------------------------------------------------
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumIngot), 
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumIngot), 
     			"cbi", 
     			"bab", 
     			"gbd",
-    			'a', AdamantiumMod.vibraniumLump, 'b', Items.blaze_powder, 'c', Items.coal,
+    			'a', CommonProxy.vibraniumLump, 'b', Items.blaze_powder, 'c', Items.coal,
     			'i', Items.iron_ingot, 'g', Items.gold_ingot, 'd', Items.diamond);
-    	GameRegistry.addShapelessRecipe(new ItemStack(AdamantiumMod.adamantiumIngot, 9), AdamantiumMod.adamantiumBlock);
-    	GameRegistry.addRecipe(new ItemStack(AdamantiumMod.adamantiumBlock), 
+    	GameRegistry.addShapelessRecipe(new ItemStack(CommonProxy.adamantiumIngot, 9), CommonProxy.adamantiumBlock);
+    	GameRegistry.addRecipe(new ItemStack(CommonProxy.adamantiumBlock), 
     			"xxx", 
     			"xxx", 
     			"xxx",
-    			'x', AdamantiumMod.adamantiumIngot);
+    			'x', CommonProxy.adamantiumIngot);
     	
 
 	}

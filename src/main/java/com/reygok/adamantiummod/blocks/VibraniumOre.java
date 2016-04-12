@@ -3,6 +3,7 @@ package com.reygok.adamantiummod.blocks;
 import java.util.Random;
 
 import com.reygok.adamantiummod.AdamantiumMod;
+import com.reygok.adamantiummod.CommonProxy;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -65,6 +66,6 @@ public class VibraniumOre extends Block
     
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-    	return AdamantiumMod.tinyVibraniumLump;
+    	return CommonProxy.tinyVibraniumLump;
     }
 }

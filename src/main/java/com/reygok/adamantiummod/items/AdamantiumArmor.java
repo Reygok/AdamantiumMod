@@ -1,9 +1,9 @@
 package com.reygok.adamantiummod.items;
 
 import com.reygok.adamantiummod.AdamantiumMod;
+import com.reygok.adamantiummod.CommonProxy;
 
 import net.minecraft.creativetab.CreativeTabs;
-import net.minecraft.entity.Entity;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemArmor;
@@ -47,7 +47,7 @@ public class AdamantiumArmor extends ItemArmor
 	@Override
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return repair.getItem() == AdamantiumMod.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);
+		return repair.getItem() == CommonProxy.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 	// @Override
@@ -66,7 +66,7 @@ public class AdamantiumArmor extends ItemArmor
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack)
 	{
-		if (itemStack.getItem() == AdamantiumMod.adamantiumChestplate)
+		if (itemStack.getItem() == CommonProxy.adamantiumChestplate)
 		{
 			effectPlayer(player, Potion.potionRegistry.getObjectById(5), 0);
 		}
@@ -80,10 +80,10 @@ public class AdamantiumArmor extends ItemArmor
 	{
 		if (player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(2) != null
 				&& player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(0) != null
-				&& player.inventory.armorItemInSlot(3).getItem() == AdamantiumMod.adamantiumHelmet
-				&& player.inventory.armorItemInSlot(2).getItem() == AdamantiumMod.adamantiumChestplate
-				&& player.inventory.armorItemInSlot(1).getItem() == AdamantiumMod.adamantiumLeggings
-				&& player.inventory.armorItemInSlot(0).getItem() == AdamantiumMod.adamantiumBoots)
+				&& player.inventory.armorItemInSlot(3).getItem() == CommonProxy.adamantiumHelmet
+				&& player.inventory.armorItemInSlot(2).getItem() == CommonProxy.adamantiumChestplate
+				&& player.inventory.armorItemInSlot(1).getItem() == CommonProxy.adamantiumLeggings
+				&& player.inventory.armorItemInSlot(0).getItem() == CommonProxy.adamantiumBoots)
 		{
 			return true;
 		} else
