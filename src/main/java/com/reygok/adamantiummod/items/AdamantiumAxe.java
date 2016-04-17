@@ -1,19 +1,15 @@
 package com.reygok.adamantiummod.items;
 
-import com.reygok.adamantiummod.AdamantiumMod;
-import com.reygok.adamantiummod.CommonProxy;
 import com.reygok.adamantiummod.init.AdaItems;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class AdamantiumAxe extends ItemAxe
 {
-	private static final String name = "adamantiumAxe";
 	
-	public AdamantiumAxe(ToolMaterial mat)	
+	public AdamantiumAxe(String name, ToolMaterial mat)	
 	{
 		super(ToolMaterial.WOOD);
         this.damageVsEntity = 10.0F;
@@ -23,14 +19,9 @@ public class AdamantiumAxe extends ItemAxe
         this.efficiencyOnProperMaterial = mat.getEfficiencyOnProperMaterial();
         this.damageVsEntity = 0 + mat.getDamageVsEntity();
 
-		GameRegistry.registerItem(this, name);
-    	setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
+        setRegistryName(name);
+		setUnlocalizedName(getRegistryName().toString());
 		setCreativeTab(CreativeTabs.tabTools);
-	}
-
-	public String getName()
-	{
-		return name;
 	}
 	
 	@Override

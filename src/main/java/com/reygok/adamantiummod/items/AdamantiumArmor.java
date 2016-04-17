@@ -1,6 +1,5 @@
 package com.reygok.adamantiummod.items;
 
-import com.reygok.adamantiummod.AdamantiumMod;
 import com.reygok.adamantiummod.init.AdaItems;
 
 import net.minecraft.creativetab.CreativeTabs;
@@ -11,38 +10,16 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.common.registry.IForgeRegistryEntry;
 
 public class AdamantiumArmor extends ItemArmor
 {
-	public AdamantiumArmor(ArmorMaterial material, int renderIndex, EntityEquipmentSlot equipmentSlotIn, String name)
+	public AdamantiumArmor(String name, ArmorMaterial material, int renderIndex, EntityEquipmentSlot equipmentSlotIn)
 	{
 		super(material, renderIndex, equipmentSlotIn);
+		setRegistryName(name);
+		setUnlocalizedName(getRegistryName().toString());
 		setCreativeTab(CreativeTabs.tabCombat);
 
-		switch (equipmentSlotIn)
-		{
-		case HEAD:
-			name = "adamantiumHelmet";
-			setRegistryName(name);
-			setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
-			break;
-		case CHEST:
-			name = "adamantiumChestplate";
-			setRegistryName(name);
-			setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
-			break;
-		case LEGS:
-			name = "adamantiumLeggings";
-			setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
-			break;
-		case FEET:
-			name = "adamantiumBoots";
-			setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
-			break;
-		default:
-			break;
-		}
 	}
 
 	@Override
@@ -50,19 +27,6 @@ public class AdamantiumArmor extends ItemArmor
 	{
 		return repair.getItem() == AdaItems.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);
 	}
-
-	// @Override
-	// public String getArmorTexture(ItemStack stack, Entity entity, int slot,
-	// String type) {
-	// if (slot == 0 || slot == 1 || slot == 3) {
-	// return "adamantium:textures/models/armor/adamantium_layer_1.png";
-	//
-	// } else if (slot == 2) {
-	// return "adamantium:textures/models/armor/adamantium_layer_2.png";
-	// } else {
-	// return null;
-	// }
-	// }
 
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack)

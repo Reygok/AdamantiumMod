@@ -1,29 +1,20 @@
 package com.reygok.adamantiummod.items;
 
-import com.reygok.adamantiummod.AdamantiumMod;
-import com.reygok.adamantiummod.CommonProxy;
 import com.reygok.adamantiummod.init.AdaItems;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.ItemSword;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class AdamantiumSword extends ItemSword
 {
-	private static final String name = "adamantiumSword";
 	
-	public AdamantiumSword(ToolMaterial mat)
+	public AdamantiumSword(String name, ToolMaterial mat)
 	{
 		super(mat);
-    	GameRegistry.registerItem(this, name);
-		setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
+		setRegistryName(name);
+		setUnlocalizedName(getRegistryName().toString());
 		setCreativeTab(CreativeTabs.tabCombat);
-	}
-	
-	public String getName()
-	{
-		return name;
 	}
 	
 	@Override

@@ -1,31 +1,22 @@
 package com.reygok.adamantiummod.items;
 
-import com.reygok.adamantiummod.AdamantiumMod;
-import com.reygok.adamantiummod.CommonProxy;
 import com.reygok.adamantiummod.init.AdaItems;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemSpade;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class AdamantiumShovel extends ItemSpade
 {
-	private static final String name = "adamantiumShovel";
 	
-	public AdamantiumShovel(ToolMaterial mat)
+	public AdamantiumShovel(String name, ToolMaterial mat)
 	{
 		super(mat);
-    	GameRegistry.registerItem(this, name);
-		setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
+    	setRegistryName(name);
+		setUnlocalizedName(getRegistryName().toString());
 		setCreativeTab(CreativeTabs.tabTools);
 	}
-	
-	public String getName()
-	{
-		return name;
-	}
-	
+
 	@Override
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) {
         return repair.getItem() == AdaItems.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);

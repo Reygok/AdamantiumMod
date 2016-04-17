@@ -1,17 +1,17 @@
-tile.adamantium_vibraniumOre.name=Vibranium Ore
+tile.adamantium:vibraniumOre.name=Vibranium Ore
 tile.adamantium:adamantiumBlock.name=Adamantium Block
 
-item.adamantium_adamantiumIngot.name=Adamantium Ingot
-item.adamantium_vibraniumLump.name=Lump of Vibranium
-item.adamantium_tinyVibraniumLump.name=Tiny Lump of Vibranium
+item.adamantium:adamantiumIngot.name=Adamantium Ingot
+item.adamantium:vibraniumLump.name=Lump of Vibranium
+item.adamantium:tinyVibraniumLump.name=Tiny Lump of Vibranium
 
-item.adamantium_adamantiumPickaxe.name=Adamantium Pickaxe
-item.adamantium_adamantiumShovel.name=Adamantium Shovel
-item.adamantium_adamantiumAxe.name=Adamantium Axe
-item.adamantium_adamantiumHoe.name=Adamantium Hoe
-item.adamantium_adamantiumSword.name=Adamantium Sword
+item.adamantium:adamantiumPickaxe.name=Adamantium Pickaxe
+item.adamantium:adamantiumShovel.name=Adamantium Shovel
+item.adamantium:adamantiumAxe.name=Adamantium Axe
+item.adamantium:adamantiumHoe.name=Adamantium Hoe
+item.adamantium:adamantiumSword.name=Adamantium Sword
 
-item.adamantium_adamantiumHelmet.name=Adamantium Helmet
-item.adamantium_adamantiumChestplate.name=Adamantium Chestplate
-item.adamantium_adamantiumLeggings.name=Adamantium Leggings
-item.adamantium_adamantiumBoots.name=Adamantium Boots
+item.adamantium:adamantiumHelmet.name=Adamantium Helmet
+item.adamantium:adamantiumChestplate.name=Adamantium Chestplate
+item.adamantium:adamantiumLeggings.name=Adamantium Leggings
+item.adamantium:adamantiumBoots.name=Adamantium Boots

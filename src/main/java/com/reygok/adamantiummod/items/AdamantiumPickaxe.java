@@ -1,23 +1,20 @@
 package com.reygok.adamantiummod.items;
 
-import com.reygok.adamantiummod.AdamantiumMod;
-import com.reygok.adamantiummod.CommonProxy;
 import com.reygok.adamantiummod.init.AdaItems;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.item.ItemPickaxe;
 import net.minecraft.item.ItemStack;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class AdamantiumPickaxe extends ItemPickaxe
 {
 	private static final String name = "adamantiumPickaxe";
 	
-	public AdamantiumPickaxe(ToolMaterial mat)
+	public AdamantiumPickaxe(String name, ToolMaterial mat)
 	{
 		super(mat);
-    	GameRegistry.registerItem(this, name);
-		setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
+    	setRegistryName(name);
+		setUnlocalizedName(getRegistryName().toString());
 		setCreativeTab(CreativeTabs.tabTools);
 	}
 	

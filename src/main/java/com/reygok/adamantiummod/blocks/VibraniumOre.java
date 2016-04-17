@@ -2,8 +2,6 @@ package com.reygok.adamantiummod.blocks;
 
 import java.util.Random;
 
-import com.reygok.adamantiummod.AdamantiumMod;
-import com.reygok.adamantiummod.CommonProxy;
 import com.reygok.adamantiummod.init.AdaItems;
 
 import net.minecraft.block.Block;
@@ -17,7 +15,6 @@ import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.IBlockAccess;
 import net.minecraft.world.World;
-import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class VibraniumOre extends Block
 {

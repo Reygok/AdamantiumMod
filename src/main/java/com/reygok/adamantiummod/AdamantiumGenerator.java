@@ -2,6 +2,8 @@ package com.reygok.adamantiummod;
 
 import java.util.Random;
 
+import com.reygok.adamantiummod.init.AdaBlocks;
+
 import net.minecraft.block.state.pattern.BlockMatcher;
 import net.minecraft.init.Blocks;
 import net.minecraft.util.math.BlockPos;
@@ -34,13 +36,13 @@ public class AdamantiumGenerator implements IWorldGenerator
 
 	private void generateNether(World world, Random random, int i, int j)
 	{
-//		int AdamantiumOreXCoord = i + random.nextInt(16);
-//		int AdamantiumOreYCoord = random.nextInt(10);
-//		int AdamantiumOreZCoord = j + random.nextInt(16);
-//		BlockPos blockpos = new BlockPos(AdamantiumOreXCoord, AdamantiumOreYCoord, AdamantiumOreZCoord);
-//		WorldGenMinable worldGenMinable = new WorldGenMinable(CommonProxy.vibraniumOre.getDefaultState(), 8,
-//				BlockMatcher.forBlock(Blocks.netherrack));
-//		worldGenMinable.generate(world, random, blockpos);
+		int AdamantiumOreXCoord = i + random.nextInt(16);
+		int AdamantiumOreYCoord = random.nextInt(10);
+		int AdamantiumOreZCoord = j + random.nextInt(16);
+		BlockPos blockpos = new BlockPos(AdamantiumOreXCoord, AdamantiumOreYCoord, AdamantiumOreZCoord);
+		WorldGenMinable worldGenMinable = new WorldGenMinable(AdaBlocks.vibraniumOre.getDefaultState(), 8,
+				BlockMatcher.forBlock(Blocks.netherrack));
+		worldGenMinable.generate(world, random, blockpos);
 	}
 
 }
