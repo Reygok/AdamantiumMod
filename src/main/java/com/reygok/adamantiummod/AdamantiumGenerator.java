@@ -20,7 +20,7 @@ public class AdamantiumGenerator implements IWorldGenerator
 		switch (world.provider.getDimension())
 		{
 		case -1:
-			if (random.nextInt(2) == 0)
+			if (random.nextInt(3) == 0)
 			{
 				generateNether(world, random, chunkX * 16, chunkZ * 16);
 			}
@@ -34,13 +34,13 @@ public class AdamantiumGenerator implements IWorldGenerator
 
 	private void generateNether(World world, Random random, int i, int j)
 	{
-		int AdamantiumOreXCoord = i + random.nextInt(16);
-		int AdamantiumOreYCoord = random.nextInt(10);
-		int AdamantiumOreZCoord = j + random.nextInt(16);
-		BlockPos blockpos = new BlockPos(AdamantiumOreXCoord, AdamantiumOreYCoord, AdamantiumOreZCoord);
-		WorldGenMinable worldGenMinable = new WorldGenMinable(CommonProxy.vibraniumOre.getDefaultState(), 30,
-				BlockMatcher.forBlock(Blocks.netherrack));
-		worldGenMinable.generate(world, random, blockpos);
+//		int AdamantiumOreXCoord = i + random.nextInt(16);
+//		int AdamantiumOreYCoord = random.nextInt(10);
+//		int AdamantiumOreZCoord = j + random.nextInt(16);
+//		BlockPos blockpos = new BlockPos(AdamantiumOreXCoord, AdamantiumOreYCoord, AdamantiumOreZCoord);
+//		WorldGenMinable worldGenMinable = new WorldGenMinable(CommonProxy.vibraniumOre.getDefaultState(), 8,
+//				BlockMatcher.forBlock(Blocks.netherrack));
+//		worldGenMinable.generate(world, random, blockpos);
 	}
 
 }

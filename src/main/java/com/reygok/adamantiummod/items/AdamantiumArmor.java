@@ -1,7 +1,7 @@
 package com.reygok.adamantiummod.items;
 
 import com.reygok.adamantiummod.AdamantiumMod;
-import com.reygok.adamantiummod.CommonProxy;
+import com.reygok.adamantiummod.init.AdaItems;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -11,12 +11,11 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.potion.Potion;
 import net.minecraft.potion.PotionEffect;
 import net.minecraft.world.World;
+import net.minecraftforge.fml.common.registry.IForgeRegistryEntry;
 
 public class AdamantiumArmor extends ItemArmor
 {
-	private String name;
-
-	public AdamantiumArmor(ArmorMaterial material, int renderIndex, EntityEquipmentSlot equipmentSlotIn)
+	public AdamantiumArmor(ArmorMaterial material, int renderIndex, EntityEquipmentSlot equipmentSlotIn, String name)
 	{
 		super(material, renderIndex, equipmentSlotIn);
 		setCreativeTab(CreativeTabs.tabCombat);
@@ -25,10 +24,12 @@ public class AdamantiumArmor extends ItemArmor
 		{
 		case HEAD:
 			name = "adamantiumHelmet";
+			setRegistryName(name);
 			setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
 			break;
 		case CHEST:
 			name = "adamantiumChestplate";
+			setRegistryName(name);
 			setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
 			break;
 		case LEGS:
@@ -47,7 +48,7 @@ public class AdamantiumArmor extends ItemArmor
 	@Override
 	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
 	{
-		return repair.getItem() == CommonProxy.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);
+		return repair.getItem() == AdaItems.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 	// @Override
@@ -66,7 +67,7 @@ public class AdamantiumArmor extends ItemArmor
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack)
 	{
-		if (itemStack.getItem() == CommonProxy.adamantiumChestplate)
+		if (itemStack.getItem() == AdaItems.adamantiumChestplate)
 		{
 			effectPlayer(player, Potion.potionRegistry.getObjectById(5), 0);
 		}
@@ -80,10 +81,10 @@ public class AdamantiumArmor extends ItemArmor
 	{
 		if (player.inventory.armorItemInSlot(3) != null && player.inventory.armorItemInSlot(2) != null
 				&& player.inventory.armorItemInSlot(1) != null && player.inventory.armorItemInSlot(0) != null
-				&& player.inventory.armorItemInSlot(3).getItem() == CommonProxy.adamantiumHelmet
-				&& player.inventory.armorItemInSlot(2).getItem() == CommonProxy.adamantiumChestplate
-				&& player.inventory.armorItemInSlot(1).getItem() == CommonProxy.adamantiumLeggings
-				&& player.inventory.armorItemInSlot(0).getItem() == CommonProxy.adamantiumBoots)
+				&& player.inventory.armorItemInSlot(3).getItem() == AdaItems.adamantiumHelmet
+				&& player.inventory.armorItemInSlot(2).getItem() == AdaItems.adamantiumChestplate
+				&& player.inventory.armorItemInSlot(1).getItem() == AdaItems.adamantiumLeggings
+				&& player.inventory.armorItemInSlot(0).getItem() == AdaItems.adamantiumBoots)
 		{
 			return true;
 		} else
@@ -99,9 +100,5 @@ public class AdamantiumArmor extends ItemArmor
 			player.addPotionEffect(new PotionEffect(potion, 159, amplifier, true, false));
 	}
 
-	public String getName()
-	{
-		return name;
-	}
 
 }

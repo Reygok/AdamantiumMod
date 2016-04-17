@@ -1,5 +1,5 @@
 tile.adamantium_vibraniumOre.name=Vibranium Ore
-tile.adamantium_adamantiumBlock.name=Adamantium Block
+tile.adamantium:adamantiumBlock.name=Adamantium Block
 
 item.adamantium_adamantiumIngot.name=Adamantium Ingot
 item.adamantium_vibraniumLump.name=Lump of Vibranium

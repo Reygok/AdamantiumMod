@@ -8,17 +8,11 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class VibraniumLump extends Item {
 	
-	private final String name = "vibraniumLump";
 	
-   	public VibraniumLump()
+   	public VibraniumLump(String name)
     {
-    	GameRegistry.registerItem(this, name);
+   		setRegistryName(name);
     	setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
 		setCreativeTab(CreativeTabs.tabMaterials);
     }
-
-	public String getName()
-	{
-		return name;
-	}
 }

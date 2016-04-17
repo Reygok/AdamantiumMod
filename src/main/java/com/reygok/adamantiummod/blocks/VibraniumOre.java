@@ -4,6 +4,7 @@ import java.util.Random;
 
 import com.reygok.adamantiummod.AdamantiumMod;
 import com.reygok.adamantiummod.CommonProxy;
+import com.reygok.adamantiummod.init.AdaItems;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
@@ -20,13 +21,12 @@ import net.minecraftforge.fml.common.registry.GameRegistry;
 
 public class VibraniumOre extends Block
 {
-	private final String name = "vibraniumOre";
 	
-    public VibraniumOre()
+    public VibraniumOre(String name)
     {
 		super(Material.rock);
-    	GameRegistry.registerBlock(this, name);  	
-		setUnlocalizedName(AdamantiumMod.MODID + "_" + name);
+		setRegistryName(name);
+		setUnlocalizedName(getRegistryName().toString());
 		setCreativeTab(CreativeTabs.tabBlock);
 		setHarvestLevel("pickaxe", 3);
 		setHardness(20.0F);
@@ -53,12 +53,6 @@ public class VibraniumOre extends Block
         }
     }
 
-    
-    public String getName()
-    {
-    	return name;
-    }
-    
     public int quantityDroppedWithBonus(int fortune, Random random)
     {
     	return 1 + random.nextInt(fortune + 1);
@@ -66,6 +60,6 @@ public class VibraniumOre extends Block
     
     public Item getItemDropped(IBlockState state, Random rand, int fortune)
     {
-    	return CommonProxy.tinyVibraniumLump;
+    	return AdaItems.tinyVibraniumLump;
     }
 }
