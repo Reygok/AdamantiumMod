@@ -38,7 +38,6 @@ public class AdaItems
 
 	public static void initItems()
 	{
-		
     	adamantiumIngot = new AdamantiumIngot("adamantiumIngot");
     	vibraniumLump = new VibraniumLump("vibraniumLump");
     	tinyVibraniumLump = new TinyVibraniumLump("tinyVibraniumLump");
@@ -47,10 +46,10 @@ public class AdaItems
     	adamantiumAxe = new AdamantiumAxe("adamantiumAxe", AdaMaterials.TOOL_ADAMANTIUM);
     	adamantiumHoe = new AdamantiumHoe("adamantiumHoe", AdaMaterials.TOOL_ADAMANTIUM);
     	adamantiumSword = new AdamantiumSword("adamantiumSword", AdaMaterials.TOOL_ADAMANTIUM);
-    	adamantiumHelmet = new AdamantiumArmor("adamantiumHelmet", AdaMaterials.ARMOR_ADAMANTIUM, 0, EntityEquipmentSlot.HEAD);
-    	adamantiumChestplate = new AdamantiumArmor("adamantiumChestplate", AdaMaterials.ARMOR_ADAMANTIUM, 0, EntityEquipmentSlot.CHEST);
-    	adamantiumLeggings = new AdamantiumArmor("adamantiumLeggings", AdaMaterials.ARMOR_ADAMANTIUM, 0, EntityEquipmentSlot.LEGS);
-    	adamantiumBoots = new AdamantiumArmor("adamantiumBoots", AdaMaterials.ARMOR_ADAMANTIUM, 0, EntityEquipmentSlot.FEET);
+    	adamantiumHelmet = new AdamantiumArmor("adamantiumHelmet", EntityEquipmentSlot.HEAD);
+    	adamantiumChestplate = new AdamantiumArmor("adamantiumChestplate", EntityEquipmentSlot.CHEST);
+    	adamantiumLeggings = new AdamantiumArmor("adamantiumLeggings", EntityEquipmentSlot.LEGS);
+    	adamantiumBoots = new AdamantiumArmor("adamantiumBoots", EntityEquipmentSlot.FEET);
 
 		itemAdamanitumBlock = new ItemBlock(AdaBlocks.adamantiumBlock);
 		itemVibraniumOre = new ItemBlock(AdaBlocks.vibraniumOre);

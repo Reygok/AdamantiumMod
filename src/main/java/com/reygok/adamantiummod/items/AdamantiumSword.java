@@ -8,7 +8,7 @@ import net.minecraft.item.ItemSword;
 
 public class AdamantiumSword extends ItemSword
 {
-	
+
 	public AdamantiumSword(String name, ToolMaterial mat)
 	{
 		super(mat);
@@ -16,10 +16,11 @@ public class AdamantiumSword extends ItemSword
 		setUnlocalizedName(getRegistryName().toString());
 		setCreativeTab(CreativeTabs.tabCombat);
 	}
-	
+
 	@Override
-	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) {
-        return repair.getItem() == AdaItems.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return repair.getItem() == AdaItems.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

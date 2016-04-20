@@ -11,7 +11,7 @@ public class AdaMaterials
 	{ 3, 8, 6, 3 };
 
 	public static ToolMaterial TOOL_ADAMANTIUM = EnumHelper.addToolMaterial("ADAMANTIUM", 3, 16383, 19.0F, 8.0F, 30);
-	public static ArmorMaterial ARMOR_ADAMANTIUM = EnumHelper.addArmorMaterial("adamantium", "adamantiumArmor", 128,
-			durability, 30, SoundEvents.item_armor_equip_iron);
+	public static ArmorMaterial ARMOR_ADAMANTIUM = EnumHelper.addArmorMaterial("adamantium",
+			"adamantium:adamantiumArmor", 128, durability, 30, SoundEvents.item_armor_equip_iron);
 
 }

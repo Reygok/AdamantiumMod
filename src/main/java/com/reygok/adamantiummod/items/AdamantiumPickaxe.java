@@ -8,7 +8,6 @@ import net.minecraft.item.ItemStack;
 
 public class AdamantiumPickaxe extends ItemPickaxe
 {
-	private static final String name = "adamantiumPickaxe";
 	
 	public AdamantiumPickaxe(String name, ToolMaterial mat)
 	{
@@ -16,11 +15,6 @@ public class AdamantiumPickaxe extends ItemPickaxe
     	setRegistryName(name);
 		setUnlocalizedName(getRegistryName().toString());
 		setCreativeTab(CreativeTabs.tabTools);
-	}
-	
-	public String getName()
-	{
-		return name;
 	}
 
 	@Override

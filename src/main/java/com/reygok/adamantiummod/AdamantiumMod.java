@@ -11,7 +11,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 public class AdamantiumMod
 {
 	public static final String MODID = "adamantium";
-	public static final String VERSION = "1.4.3";
+	public static final String VERSION = "1.5";
 	public static final String NAME = "Adamantium Mod";
 	
 	@SidedProxy(clientSide="com.reygok.adamantiummod.ClientProxy", serverSide="com.reygok.adamantiummod.ServerProxy")

@@ -10,7 +10,7 @@ import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 
 public class CommonProxy
 {
-	
+	public static AdamantiumGenerator adamantioumGenerator;
 	public static AdaRecipes recipes;
 
 	public void preInit(FMLPreInitializationEvent e)
@@ -20,26 +20,12 @@ public class CommonProxy
 		
 		AdaBlocks.registerBlocks();
 		AdaItems.registerItems();
-	
-		// Instantiate blocks and items--------------------------------------------------------------------
-
-    	// Register blocks and items--------------------------------------------------------------------
-//    	GameRegistry.register(vibraniumOre);
-    	//    	GameRegistry.register(adamantiumHelmet);
-
-//    	GameRegistry.register(adamantiumChestplate);
-//    	GameRegistry.registerItem(adamantiumLeggings, "adamantiumLeggings");
-//    	GameRegistry.registerItem(adamantiumBoots, "adamantiumBoots");
-    	
-    	// WorldGenerator --------------------------------------------------------------
-//    	GameRegistry.registerWorldGenerator(new AdamantiumGenerator(), 0);
-    	
-
 	}
 		
 	public void init(FMLInitializationEvent e)
 	{
     	AdaRecipes.registerRecipes();
+    	adamantioumGenerator = new AdamantiumGenerator();
 
 	}
 	

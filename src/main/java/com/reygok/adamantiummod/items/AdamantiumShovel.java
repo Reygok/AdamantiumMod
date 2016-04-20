@@ -8,18 +8,19 @@ import net.minecraft.item.ItemStack;
 
 public class AdamantiumShovel extends ItemSpade
 {
-	
+
 	public AdamantiumShovel(String name, ToolMaterial mat)
 	{
 		super(mat);
-    	setRegistryName(name);
+		setRegistryName(name);
 		setUnlocalizedName(getRegistryName().toString());
 		setCreativeTab(CreativeTabs.tabTools);
 	}
 
 	@Override
-	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair) {
-        return repair.getItem() == AdaItems.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);
+	public boolean getIsRepairable(ItemStack toRepair, ItemStack repair)
+	{
+		return repair.getItem() == AdaItems.adamantiumIngot ? true : super.getIsRepairable(toRepair, repair);
 	}
 
 }

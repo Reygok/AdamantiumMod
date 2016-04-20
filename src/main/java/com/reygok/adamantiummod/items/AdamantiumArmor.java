@@ -1,6 +1,7 @@
 package com.reygok.adamantiummod.items;
 
 import com.reygok.adamantiummod.init.AdaItems;
+import com.reygok.adamantiummod.init.AdaMaterials;
 
 import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
@@ -13,9 +14,9 @@ import net.minecraft.world.World;
 
 public class AdamantiumArmor extends ItemArmor
 {
-	public AdamantiumArmor(String name, ArmorMaterial material, int renderIndex, EntityEquipmentSlot equipmentSlotIn)
+	public AdamantiumArmor(String name, EntityEquipmentSlot equipmentSlotIn)
 	{
-		super(material, renderIndex, equipmentSlotIn);
+		super(AdaMaterials.ARMOR_ADAMANTIUM, 0, equipmentSlotIn);
 		setRegistryName(name);
 		setUnlocalizedName(getRegistryName().toString());
 		setCreativeTab(CreativeTabs.tabCombat);
@@ -63,6 +64,5 @@ public class AdamantiumArmor extends ItemArmor
 		if (player.getActivePotionEffect(potion) == null || player.getActivePotionEffect(potion).getDuration() <= 1)
 			player.addPotionEffect(new PotionEffect(potion, 159, amplifier, true, false));
 	}
-
 
 }
